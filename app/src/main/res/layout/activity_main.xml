@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity"
+    android:background="#2196F3"
+    >
+    <TextView
+        android:id="@+id/tv_nama_sekolah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:gravity="bottom"
+        android:text="Nama Sekolah"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/et_nama_sekolah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nama_sekolah"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tv_alamat_sekolah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nama_sekolah"
+        android:layout_marginBottom="2dp"
+        android:gravity="bottom"
+        android:text="Alamat Sekolah"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/et_alamat_sekolah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_alamat_sekolah"
+        android:textSize="21sp" />
+    <TextView
+        android:id="@+id/tv_jml_siswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_alamat_sekolah"
+        android:layout_marginBottom="2dp"
+        android:text="Jumlah Siswa"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/et_jml_siswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_jml_siswa"
+        android:textSize="21sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_jml_guru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_jml_siswa"
+        android:layout_marginBottom="2dp"
+        android:gravity="bottom"
+        android:text="Jumlah Guru"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/et_jml_guru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jml_guru"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/et_jml_guru"
+        android:background="#8BC34A"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_lihat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="lihat data"
+        android:layout_below="@+id/et_jml_guru"
+        android:layout_toRightOf="@id/btn_submit"
+        android:background="#F44336"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
